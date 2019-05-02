@@ -1,1 +1,78 @@
-/* Compile your LESS file! */
+/* Colors -------------------------------------*/
+/* Responsive Breakpoints ---------------------*/
+/* Page Components ----------------------------*/
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  color: #3f4245;
+}
+h1 {
+  font-family: 'Modak', cursive;
+  font-size: 5rem;
+  color: #937dc9;
+}
+a {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  color: #3f4245;
+}
+a:hover {
+  opacity: 0.7;
+  color: #7758c7;
+  transition: all 0.1s ease;
+}
+.container {
+  width: 880px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 60px 30px;
+  border-right: 1px solid #ebecee;
+  border-left: 1px solid #ebecee;
+}
+@media (max-width: 880px) {
+  .container {
+    width: 100%;
+  }
+}
+/* Header/Nav */
+header {
+  height: 80px;
+  width: 100%;
+  background-color: #ebecee;
+}
+@media (max-width: 880px) {
+  header {
+    height: 60px;
+  }
+}
+nav {
+  width: 880px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (max-width: 880px) {
+  nav {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+nav a {
+  margin-right: 30px;
+}
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+}
+.circle-clip {
+  clip-path: circle(150px at 215px 150px);
+  max-height: 300px;
+}
